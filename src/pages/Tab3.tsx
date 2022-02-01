@@ -3,24 +3,34 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
 
 const Tab3: React.FC = () => {
+  const printMeassage = () => {
+
+    alert("your response has been submitted");
+  }
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Contact us</IonTitle>
+          <IonTitle color="primary">Contact us</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <form className="ion-padding">
-
-          <IonLabel position="floating">Message</IonLabel>
-          <IonInput type="text" />
+          <IonItem>
+            <IonLabel position="floating">Username</IonLabel>
+            <IonInput />
+          </IonItem>
+          <IonItem>
+            <IonLabel position="floating">Message</IonLabel>
+            <IonInput type="text" />
           </IonItem>
 
-        <IonButton className="ion-margin-top" type="submit" expand="block">
-          Send
-          </IonButton>
+          <IonButton className="ion-margin-top" type="submit" expand="block" onClick={printMeassage}>
+            Send
+        </IonButton>
         </form>
+
 
       </IonContent>
     </IonPage >
