@@ -1,0 +1,7 @@
+{
+  "name": "TabsIconic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
